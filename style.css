@@ -1,0 +1,672 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  background-image: linear-gradient(#FFF, #F6F6F6);
+}
+
+/*============================= FOOTER ==================================*/
+footer {
+  width: 100%;
+  height: 350.12px;
+  background: #f8f8f8;
+}
+
+/* ============================ NAVIGATION ===============================*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 30px 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 40px;
+}
+
+nav ul li a:hover {
+  color: #F53838;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+li a {
+  color: #4F5665;
+}
+
+h1 a{
+  color: #0B132A;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.paryskintas {
+  font-weight: 700;
+}
+
+.pagr-logo {
+  display: flex;
+  align-items: center;
+}
+
+.pagr-logo::before {
+  content: url('images/footerlogo.png');
+  margin-right: 15px;
+  display: flex;
+}
+
+nav .sign .signup {
+  border: 1px solid;
+  border-radius: 50px;
+  display: inline;
+  padding: 13px 45px;
+  color: #F53855;
+  font-weight: 500;
+}
+
+nav .sign .signup:hover {
+  background: #F53855;
+  color: white;
+}
+
+.prisijungti a {
+  color: #F53855;
+  font-size: 16px;
+}
+
+nav .sign .signin {
+  margin-right: 30px;
+  color: #0B132A;
+  font-weight: 500;
+}
+
+nav .sign .signin:hover {
+  text-decoration: underline;
+}
+
+.hamburger-menu {
+  position: absolute;
+  display: none;
+}
+
+/* =====================HEADER==========================*/
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+header h1 {
+  font-family: Rubik;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+header h1 span {
+  font-weight: 900;
+}
+
+header p span {
+  font-weight: 500;
+}
+
+header p {
+  color: #4F5665;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.header-img img {
+  width: 100%;
+  height: auto;
+}
+
+.start-button {
+position: absolute;
+padding: 21px 77px;
+color: white;
+background: #F53838;
+font-weight: 600;
+border-radius: 10px;
+margin-top: 30px;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 0 30px 80px 1px rgba(245, 56, 56, 0.35)
+}
+
+/* ===============================LENTELE=================================*/
+
+.lentele {
+  display: flex;
+  width: 1140px;
+  height: 110px;
+  background: #FFFFFF;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 30px 90px 1px rgba(0, 0, 0, 0.2);
+}
+
+.lentele .skirimas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lentele .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info .skaiciai, .zodis {
+  display: flex;
+  text-align: center;
+  margin: 0;
+}
+
+.zodis {
+  color: #4F5665;
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.juostele {
+  display: flex;
+  width: 0px;
+  height: 70.57px;
+  border: 2px solid #EEEFF2;
+  align-items: center;
+  margin: 20px 0;
+}
+/*========================= FEATURES =========================*/
+.features {
+  margin: 100px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-left img {
+  width: 100%;
+  height: auto;
+}
+
+.features-right h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.features-right p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.features-right ul {
+  padding-left: 25px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.features-right li {
+    margin: 5px 0;
+}
+
+.features-right li::marker {
+  content: url('images/check-icon.png');
+  position: relative;
+  top: 5px;
+}
+
+/* ==============================CHOOSE PLAN=====================================*/
+
+.planai-tekstas {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
+.planai {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.planai .plan-box {
+  width: 330px;
+  height: 760px;
+  border: 2px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 80px 40px;
+}
+
+.planai .plan-box:hover {
+  border: 2px solid #F53838;
+}
+
+.plan-box ul {
+  line-height: 40px;
+}
+
+.plan-box li {
+  width: 200px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.plan-box li::marker {
+    content: url('images/check2.png');
+    position: relative;
+    top: 5px;
+  }
+
+  .plan-box h2 {
+    margin: 30px 0;
+  }
+
+.button a {
+  border: 2px solid;
+  padding: 15px 70px;
+  color: #F53838;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 50px;
+  }
+
+.button a:hover {
+  color: white;
+  background: #F53838;
+}
+
+.bottom h1 {
+  margin-bottom: 35px;
+}
+
+.bottom span {
+  font-weight: normal;
+  color: #4F5665;
+}
+/*=================================MAP DALIS ==================================*/
+.map-dalis {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.map-tekstas {
+  margin-bottom: 50px;
+}
+
+.map-image img{
+  width: 100%;
+  height: auto;
+}
+
+.map-tekstas h1 {
+  font-size: 35px;
+}
+
+/*================================SPONSORS======================================*/
+.sponsors {
+  width: 1140px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sponsors img {
+  width: 157px;
+  height: 52px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sponsors a {
+  height: 52px;
+}
+
+.sponsors #resize {
+  height: 80px;
+}
+
+/* ==============================CUSTOMERS=====================================*/
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.customers-tekstas {
+  margin-bottom: 60px;
+}
+
+.atsiliepimai {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.item {
+  display: block;
+  justify-content: space-between;
+  border: 2px solid #F53838;
+  width: 400px;
+  height: 230px;
+  color: black;
+  background: transparent;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.item .virsus {
+  padding: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.virsus-foto {
+  margin-right: 15px;
+}
+
+.virsus-vardas {
+  line-height: 1px;
+  text-align: left;
+}
+
+.vardo-tekstas {
+  font-weight: 500;
+}
+
+.vardo-vieta {
+  color: #4F5665;
+  font-size: 14px;
+}
+
+.ivertinimas {
+  display: flex;
+  margin-left: 120px;
+}
+
+.ivertinimas::after {
+  content: url('images/star.png');
+  margin-left: 5px;
+}
+
+.atsiliepimas {
+  padding: 0px 20px;
+  display: flex;
+  text-align: left;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+/*================================SUBSCRIBE KONTEINERIS=========================*/
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.subscribe {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  height: 233px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  flex-direction: row;
+  background: #FFF;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  position: absolute;
+  box-shadow: 0 30px 90px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-tekstas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+
+.subscribe-tekstas h2{
+  font-size: 35px;
+}
+
+.subscribe-tekstas p {
+  color: #4F5665;
+}
+
+.subscribe-mygtukas a {
+  padding: 21px 77px;
+  color: white;
+  background: #F53838;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+
+.apacia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logotipas-footer h2 {
+  font-weight: 500;
+}
+
+.logotipas-footer h2 span {
+  font-weight: bold;
+}
+
+.logotipas-footer {
+  display: flex;
+  margin-right: 15px;
+}
+
+.logotipas-footer::before {
+  content: url('images/footerlogo.png');
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.tekstas-footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.footer-desine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright p {
+  color: #AFB5C0;
+}
+
+.copyright span {
+  font-weight: bold;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer ul li a:hover {
+  color: #0B132A;
+}
+
+.footer-desine ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-listas {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-right: 80px;
+}
+
+.footer-listas h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* ==============================RESPONSIVE=====================================*/
+@media (max-width: 900px) {
+  body {
+    height: 1000px;
+  }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  nav h1 a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  nav ul li {
+    display: none;
+  }
+  .sign {
+    display: none;
+  }
+
+  .hamburger-menu{
+    display: flex;
+    width: 30px;
+    height: 15px;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .start-button {
+    margin-top: 0;
+  }
+
+  /*==============================LENTELE========================*/
+  .lentele {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .juostele {
+    position: absolute;
+    display: none;
+  }
+  /*==============================FEATURES========================*/
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*=======================PLANAI=============================*/
+  .planai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  /*=================================SPONSORS ==================================*/
+  .sponsors {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  .sponsors a {
+    margin-bottom: 30px;
+  }
+  .subscribe {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 300px;
+  }
+  .subscribe-mygtukas a {
+    margin: 0;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .apacia {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logotipas-footer{
+    justify-content: center;
+  }
+}
